@@ -1,0 +1,151 @@
+/* Modo escuro geral */
+body {
+    background-color: #121212; /* Fundo escuro */
+    color: #E0E0E0; /* Texto claro */
+    max-width: 75%; /* Limitar a largura do body */
+    margin: 0 auto; /* Centralizar o body */
+    margin-top: 80px;
+}
+
+h1{
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+li{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+/* Navbar fixada no topo */
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #1E1E1E !important; /* Navbar escura */
+    z-index: 1000; /* Garantir que a navbar fique no topo */
+    display: flex;
+    justify-content: space-between; /* Espaça os itens de forma igual */
+    align-items: center; /* Alinha os itens verticalmente no centro */
+    height: 60px; /* Altura da navbar (ajuste conforme necessário) */
+    padding: 0 20px; /* Padding lateral */
+}
+
+/* Estilo fixo para a barra de busca */
+.navbar form {
+    z-index: 1000; /* Certificar-se de que o botão de busca fique no topo */
+}
+
+/* Estilo do link da navbar */
+.navbar-brand {
+    color: #E0E0E0 !important; /* Cor clara para o título da navbar */
+    font-size: 1.5rem; /* Tamanho da fonte (ajuste conforme necessário) */
+}
+
+/* Ícone do hambúrguer */
+.navbar-toggler-icon {
+    filter: invert(1); /* Ícone do hambúrguer claro */
+}
+
+/* Links do menu */
+.navbar-nav {
+    display: flex;
+    justify-content: center; /* Centraliza os links do menu horizontalmente */
+    flex-grow: 1; /* Faz com que a área de links ocupe o espaço disponível */
+}
+
+.nav-link {
+    color: #E0E0E0 !important; /* Links do menu com cor clara */
+    margin: 0 10px; /* Ajuste a margem conforme necessário */
+    line-height: 60px; /* Alinha verticalmente os links na navbar */
+    font-size: 1rem; /* Tamanho da fonte dos links (ajuste conforme necessário) */
+}
+
+.nav-link:hover {
+    color: #B0B0B0 !important; /* Cor de hover para os links (cinza claro) */
+}
+
+/* Centralizar e limitar o carrossel e outros conteúdos a 75% da tela */
+.container-content {
+    max-width: 75%;
+    margin: 0 auto; /* Centralizar o conteúdo */
+}
+
+/* Ajustando as legendas do carrossel com estilo Bootstrap */
+.carousel-caption p {
+    color: #E0E0E0 !important; /* Texto claro para a legenda do carrossel */
+    background-color: rgba(0, 0, 0, 0.5); /* Fundo levemente escuro */
+    padding: 10px;
+    border-radius: 5px;
+}
+
+/* Ajustando o carrossel com bordas arredondadas e sombra */
+.carousel-item {
+    border-radius: 15px; /* Cantos arredondados */
+    border: 1px solid #B0B0B0; /* Borda cinza clara */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra cinza clara */
+}
+
+/* Se você deseja adicionar arredondamento e borda às imagens do carrossel também */
+.carousel-item img {
+    border-radius: 15px; /* Cantos arredondados nas imagens */
+    border: 1px solid #B0B0B0; /* Borda cinza clara nas imagens */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra cinza clara nas imagens */
+}
+
+/* Botões */
+.btn {
+    background-color: #333 !important; /* Botão com fundo escuro */
+    color: #E0E0E0 !important; /* Cor do texto do botão */
+}
+
+.btn-outline-success {
+    border-color: #B0B0B0 !important; /* Cor da borda do botão outline (cinza claro) */
+    color: #B0B0B0 !important; /* Texto do botão outline */
+}
+
+.btn-outline-success:hover {
+    background-color: #B0B0B0 !important; /* Botão ao passar o mouse (cinza claro) */
+    color: #000 !important; /* Cor do texto ao passar o mouse */
+}
+
+/* Campo de busca claro */
+.form-control {
+    background-color: #E0E0E0 !important; /* Fundo claro */
+    color: #000 !important; /* Texto escuro */
+    border-color: #B0B0B0 !important; /* Borda do campo de busca */
+}
+
+.form-control::placeholder {
+    color: #333; /* Cor do placeholder */
+}
+
+/* Remover filtro escuro nas imagens do carrossel */
+.carousel-item img {
+    filter: none; /* Remove qualquer filtro */
+}
+
+/* Modo escuro para o acordeão */
+.accordion-button {
+    background-color: #333; /* Cor de fundo do botão do acordeão */
+    color: #E0E0E0; /* Cor do texto do botão do acordeão */
+    border: 1px solid #444; /* Cor da borda do botão do acordeão */
+    border-radius: 0; /* Remover bordas arredondadas do botão do acordeão */
+}
+
+.accordion-button:not(.collapsed) {
+    background-color: #444; /* Cor de fundo quando o item está expandido */
+    color: #E0E0E0; /* Cor do texto quando o item está expandido */
+}
+
+.accordion-body {
+    background-color: #1E1E1E; /* Cor de fundo do corpo do acordeão */
+    color: #E0E0E0; /* Cor do texto no corpo do acordeão */
+    border-radius: 0; /* Remover bordas arredondadas do corpo do acordeão */
+}
+
+/* Seta clara no botão do acordeão */
+.accordion-button::after {
+    filter: invert(1); /* Mudar a cor da seta para clara */
+}
