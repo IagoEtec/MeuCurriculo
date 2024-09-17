@@ -7,14 +7,13 @@ body {
     margin-top: 80px;
 }
 
-h1{
+h1,h2{
     text-align: center;
     margin-bottom: 20px;
 }
 
 li{
-    margin-top: 20px;
-    margin-bottom: 20px;
+    margin: 0 auto;
 }
 
 /* Navbar fixada no topo */
@@ -70,6 +69,7 @@ li{
 .container-content {
     max-width: 75%;
     margin: 0 auto; /* Centralizar o conteúdo */
+    margin-bottom: 20px;
 }
 
 /* Ajustando as legendas do carrossel com estilo Bootstrap */
@@ -78,6 +78,7 @@ li{
     background-color: rgba(0, 0, 0, 0.5); /* Fundo levemente escuro */
     padding: 10px;
     border-radius: 5px;
+    margin-bottom: 20px;
 }
 
 /* Ajustando o carrossel com bordas arredondadas e sombra */
@@ -85,6 +86,7 @@ li{
     border-radius: 15px; /* Cantos arredondados */
     border: 1px solid #B0B0B0; /* Borda cinza clara */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra cinza clara */
+    margin-bottom: 20px;
 }
 
 /* Se você deseja adicionar arredondamento e borda às imagens do carrossel também */
@@ -148,4 +150,33 @@ li{
 /* Seta clara no botão do acordeão */
 .accordion-button::after {
     filter: invert(1); /* Mudar a cor da seta para clara */
+}
+
+/* Card no modo escuro */
+.card {
+    background-color: #1E1E1E; /* Fundo escuro do card */
+    color: #E0E0E0; /* Texto claro no card */
+    border: 1px solid #333; /* Borda sutil ao redor do card */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra para destaque */
+}
+
+.card-header {
+    background-color: #333; /* Fundo escuro no header */
+    color: #E0E0E0; /* Texto claro no header */
+    border-bottom: 1px solid #444; /* Borda inferior sutil no header */
+}
+
+.card-body {
+    background-color: #1E1E1E; /* Fundo escuro no corpo do card */
+    color: #E0E0E0; /* Texto claro no corpo do card */
+}
+
+.card-footer {
+    background-color: #333; /* Fundo escuro no footer */
+    color: #E0E0E0; /* Texto claro no footer */
+    border-top: 1px solid #444; /* Borda superior sutil no footer */
+}
+
+.text-body-secondary {
+    color: #B0B0B0 !important; /* Cor clara para o texto de atualização */
 }
