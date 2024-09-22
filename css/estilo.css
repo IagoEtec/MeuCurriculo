@@ -7,14 +7,56 @@ body {
     margin-top: 80px;
 }
 
-h1,h2{
+h1, h2 {
     text-align: center;
-    margin-bottom: 20px;
+    margin-bottom: 40px;
 }
 
-li{
+li {
     margin: 0 auto;
 }
+
+.formcx{
+    background-color: #535353; /* Fundo cinza claro */
+    padding: 15px; /* Adiciona espaçamento interno */
+    margin-bottom: 10px; /* Espaçamento entre os itens */
+    border-radius: 8px; /* Bordas arredondadas */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Sombra suave */
+}
+
+.formcx1{
+    background-color: #383838; /* Fundo cinza claro */
+    padding: 15px; /* Adiciona espaçamento interno */
+    margin-bottom: 10px; /* Espaçamento entre os itens */
+    border-radius: 8px; /* Bordas arredondadas */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    display: flex;
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center; /* Centraliza verticalmente */
+}
+
+main {
+    padding: 20px;
+  }
+  
+  /* Estilo para os elementos li */
+  ul.formacoes-lista {
+    list-style: none; /* Remove os marcadores das listas */
+    padding: 0;
+  }
+  
+  ul.formacoes-lista li {
+    background-color: #383838; /* Fundo cinza claro */
+    padding: 15px; /* Adiciona espaçamento interno */
+    margin-bottom: 10px; /* Espaçamento entre os itens */
+    border-radius: 8px; /* Bordas arredondadas */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Sombra suave */
+  }
+  
+  /* Ajustes na progress bar */
+  .progress {
+    margin-top: 20px;
+  }
 
 /* Navbar fixada no topo */
 .navbar {
@@ -25,9 +67,9 @@ li{
     background-color: #1E1E1E !important; /* Navbar escura */
     z-index: 1000; /* Garantir que a navbar fique no topo */
     display: flex;
-    justify-content: space-between; /* Espaça os itens de forma igual */
-    align-items: center; /* Alinha os itens verticalmente no centro */
-    height: 60px; /* Altura da navbar (ajuste conforme necessário) */
+    justify-content: space-between; /* Espaçar os itens de forma igual */
+    align-items: center; /* Alinhar os itens verticalmente no centro */
+    height: 60px; /* Altura da navbar */
     padding: 0 20px; /* Padding lateral */
 }
 
@@ -39,7 +81,7 @@ li{
 /* Estilo do link da navbar */
 .navbar-brand {
     color: #E0E0E0 !important; /* Cor clara para o título da navbar */
-    font-size: 1.5rem; /* Tamanho da fonte (ajuste conforme necessário) */
+    font-size: 1.5rem; /* Tamanho da fonte */
 }
 
 /* Ícone do hambúrguer */
@@ -57,126 +99,154 @@ li{
 .nav-link {
     color: #E0E0E0 !important; /* Links do menu com cor clara */
     margin: 0 10px; /* Ajuste a margem conforme necessário */
-    line-height: 60px; /* Alinha verticalmente os links na navbar */
-    font-size: 1rem; /* Tamanho da fonte dos links (ajuste conforme necessário) */
+    line-height: 60px; /* Alinhar verticalmente os links na navbar */
+    font-size: 1rem; /* Tamanho da fonte dos links */
 }
 
 .nav-link:hover {
-    color: #B0B0B0 !important; /* Cor de hover para os links (cinza claro) */
+    color: #B0B0B0 !important; /* Cor de hover */
 }
 
 /* Centralizar e limitar o carrossel e outros conteúdos a 75% da tela */
 .container-content {
     max-width: 75%;
-    margin: 0 auto; /* Centralizar o conteúdo */
+    margin: 0 auto;
     margin-bottom: 20px;
 }
 
-/* Ajustando as legendas do carrossel com estilo Bootstrap */
+/* Ajustando as legendas do carrossel */
 .carousel-caption p {
-    color: #E0E0E0 !important; /* Texto claro para a legenda do carrossel */
-    background-color: rgba(0, 0, 0, 0.5); /* Fundo levemente escuro */
+    color: #E0E0E0 !important;
+    background-color: rgba(0, 0, 0, 0.5);
     padding: 10px;
     border-radius: 5px;
     margin-bottom: 20px;
 }
 
-/* Ajustando o carrossel com bordas arredondadas e sombra */
+/* Ajustando o carrossel */
 .carousel-item {
-    border-radius: 15px; /* Cantos arredondados */
-    border: 1px solid #B0B0B0; /* Borda cinza clara */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra cinza clara */
+    border-radius: 15px;
+    border: 1px solid #B0B0B0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     margin-bottom: 20px;
 }
 
-/* Se você deseja adicionar arredondamento e borda às imagens do carrossel também */
 .carousel-item img {
-    border-radius: 15px; /* Cantos arredondados nas imagens */
-    border: 1px solid #B0B0B0; /* Borda cinza clara nas imagens */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra cinza clara nas imagens */
+    border-radius: 15px;
+    border: 1px solid #B0B0B0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 /* Botões */
 .btn {
-    background-color: #333 !important; /* Botão com fundo escuro */
-    color: #E0E0E0 !important; /* Cor do texto do botão */
+    background-color: #333 !important;
+    color: #E0E0E0 !important;
 }
 
 .btn-outline-success {
-    border-color: #B0B0B0 !important; /* Cor da borda do botão outline (cinza claro) */
-    color: #B0B0B0 !important; /* Texto do botão outline */
+    border-color: #B0B0B0 !important;
+    color: #B0B0B0 !important;
 }
 
 .btn-outline-success:hover {
-    background-color: #B0B0B0 !important; /* Botão ao passar o mouse (cinza claro) */
-    color: #000 !important; /* Cor do texto ao passar o mouse */
+    background-color: #B0B0B0 !important;
+    color: #000 !important;
 }
 
-/* Campo de busca claro */
+/* Campo de busca */
 .form-control {
-    background-color: #E0E0E0 !important; /* Fundo claro */
-    color: #000 !important; /* Texto escuro */
-    border-color: #B0B0B0 !important; /* Borda do campo de busca */
+    background-color: #E0E0E0 !important;
+    color: #000 !important;
+    border-color: #B0B0B0 !important;
 }
 
 .form-control::placeholder {
-    color: #333; /* Cor do placeholder */
+    color: #333;
 }
 
 /* Remover filtro escuro nas imagens do carrossel */
 .carousel-item img {
-    filter: none; /* Remove qualquer filtro */
+    filter: none;
 }
 
 /* Modo escuro para o acordeão */
 .accordion-button {
-    background-color: #333; /* Cor de fundo do botão do acordeão */
-    color: #E0E0E0; /* Cor do texto do botão do acordeão */
-    border: 1px solid #444; /* Cor da borda do botão do acordeão */
-    border-radius: 0; /* Remover bordas arredondadas do botão do acordeão */
+    background-color: #333;
+    color: #E0E0E0;
+    border: 1px solid #444;
+    border-radius: 0;
 }
 
 .accordion-button:not(.collapsed) {
-    background-color: #444; /* Cor de fundo quando o item está expandido */
-    color: #E0E0E0; /* Cor do texto quando o item está expandido */
+    background-color: #444;
+    color: #E0E0E0;
 }
 
 .accordion-body {
-    background-color: #1E1E1E; /* Cor de fundo do corpo do acordeão */
-    color: #E0E0E0; /* Cor do texto no corpo do acordeão */
-    border-radius: 0; /* Remover bordas arredondadas do corpo do acordeão */
+    background-color: #1E1E1E;
+    color: #E0E0E0;
+    border-radius: 0;
 }
 
 /* Seta clara no botão do acordeão */
 .accordion-button::after {
-    filter: invert(1); /* Mudar a cor da seta para clara */
+    filter: invert(1);
 }
 
 /* Card no modo escuro */
 .card {
-    background-color: #1E1E1E; /* Fundo escuro do card */
-    color: #E0E0E0; /* Texto claro no card */
-    border: 1px solid #333; /* Borda sutil ao redor do card */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra para destaque */
+    background-color: #1E1E1E;
+    color: #E0E0E0;
+    border: 1px solid #333;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    height: 100%; /* Garantir altura igual */
+    display: flex;
+    flex-direction: column;
 }
 
-.card-header {
-    background-color: #333; /* Fundo escuro no header */
-    color: #E0E0E0; /* Texto claro no header */
-    border-bottom: 1px solid #444; /* Borda inferior sutil no header */
+.card-header, .card-footer {
+    background-color: #333;
+    color: #E0E0E0;
+    border-bottom: 1px solid #444;
+    border-top: 1px solid #444;
 }
 
 .card-body {
-    background-color: #1E1E1E; /* Fundo escuro no corpo do card */
-    color: #E0E0E0; /* Texto claro no corpo do card */
-}
-
-.card-footer {
-    background-color: #333; /* Fundo escuro no footer */
-    color: #E0E0E0; /* Texto claro no footer */
-    border-top: 1px solid #444; /* Borda superior sutil no footer */
+    flex-grow: 1; /* O corpo do card cresce para preencher o espaço */
 }
 
 .text-body-secondary {
-    color: #B0B0B0 !important; /* Cor clara para o texto de atualização */
+    color: #B0B0B0 !important;
+}
+
+/* List Group em modo escuro */
+.list-group {
+    background-color: #1E1E1E;
+    border-radius: 8px;
+    border: 1px solid #444;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.list-group-item {
+    background-color: #333;
+    color: #E0E0E0;
+    border: 1px solid #444;
+    padding: 15px;
+    text-align: center;
+}
+
+.list-group-item:hover {
+    background-color: #444;
+    color: #E0E0E0;
+}
+
+.list-group-item:first-child {
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+
+.list-group-item:last-child {
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
 }
